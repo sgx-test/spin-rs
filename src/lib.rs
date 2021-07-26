@@ -56,7 +56,7 @@
 //! - `ticket_mutex` uses a ticket lock for the implementation of `Mutex`
 //!
 //! - `std` enables support for thread yielding instead of spinning
-
+#![feature(renamed_spin_loop)]
 #[cfg(any(test, feature = "std"))]
 extern crate core;
 
